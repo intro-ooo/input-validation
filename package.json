@@ -1,6 +1,6 @@
 {
   "name": "input-validation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "basic form validation",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
