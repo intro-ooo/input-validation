@@ -1,4 +1,4 @@
-import validator from '../index.js';
+import validator from 'input-validation';
 
 console.log('Mobile Validation : ', validator.isMobileNumberValid());
 console.log('Pin Validation : ', validator.isPINValid());

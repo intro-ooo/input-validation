@@ -1,8 +1,8 @@
 {
   "name": "input-validation",
   "version": "1.0.0",
-  "type":"module",
-  "description": "",
+  "type": "module",
+  "description": "basic form validation",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -14,10 +14,13 @@
     "type": "git",
     "url": "git+https://github.com/intro-ooo/input-validation.git"
   },
-  "author": "",
+  "author": "Chetan Kantharia <chetan.kantharia@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/intro-ooo/input-validation/issues"
   },
-  "homepage": "https://github.com/intro-ooo/input-validation#readme"
+  "homepage": "https://github.com/intro-ooo/input-validation#readme",
+  "keywords": [
+    "validation"
+  ]
 }
