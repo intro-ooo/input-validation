@@ -1,13 +1,13 @@
 const isMobileNumberValid = (mobile_number, country_code = 91) => {
   // if country code is 91, then it should validate
   // mobile no. and return true or false result
-  let mobile_number_regex = /^[0-9]{10}$/;
+  let mobile_number_regex = /^([9]{1})([234789]{1})([0-9]{8})$/;
   return mobile_number_regex.test(mobile_number);
 };
 
 const isPINValid = (pin) => {
   // Pin should be min. 6 digit and numberic
-  let pinRegex = /^[0-9]{6}$/;
+  let pinRegex = /^[1-9]{1}[0-9]{2}[0-9]{3}$/;
   return pinRegex.test(pin);
 };
 
