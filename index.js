@@ -1,7 +1,7 @@
 const isMobileNumberValid = (mobile_number, country_code = 91) => {
   // if country code is 91, then it should validate
   // mobile no. and return true or false result
-  let mobile_number_regex = /^([9]{1})([234789]{1})([0-9]{8})$/;
+  let mobile_number_regex = /^[6-9]\d{9}$/;
   return mobile_number_regex.test(mobile_number);
 };
 

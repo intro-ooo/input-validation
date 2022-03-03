@@ -2,7 +2,7 @@ import validator from "../index.js";
 
 console.log(
   "Mobile Validation : ",
-  validator.isMobileNumberValid(6666666666, 91)
+  validator.isMobileNumberValid(8192983939, 91)
 );
 console.log("Pin Validation : ", validator.isPINValid(100000));
 console.log("OTP Validation : ", validator.isOTPValid(478394));
