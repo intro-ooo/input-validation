@@ -5,6 +5,21 @@ const isMobileNumberValid = (mobile_number, country_code = 91) => {
   return mobile_number_regex.test(mobile_number);
 };
 
+const isRequired = (required) => {
+  //should not be empty
+  let requiredRegex = /^[\s\t\r\n]*\S+/;
+  return requiredRegex.test(required);
+};
+
+const isPasswordValid = (password) => {
+  // should contain at least one digit
+  // should contain at least one lower case
+  // should contain at least one upper case
+  // should contain at least 8 from the mentioned characters
+  let passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+  return passwordRegex.test(password);
+};
+
 const isPINValid = (pin) => {
   // Pin should be min. 6 digit and numberic
   let pinRegex = /^[1-9]{1}[0-9]{2}[0-9]{3}$/;
@@ -96,6 +111,8 @@ let obj = {
   isAgeValid,
   isEmailValid,
   isWebsiteValid,
+  isPasswordValid,
+  isRequired,
 };
 
 export default obj;
