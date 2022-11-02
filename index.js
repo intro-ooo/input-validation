@@ -15,8 +15,10 @@ const isPasswordValid = (password) => {
   // should contain at least one digit
   // should contain at least one lower case
   // should contain at least one upper case
+  // should contain at least one special character
   // should contain at least 8 from the mentioned characters
-  let passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+  let passwordRegex =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   return passwordRegex.test(password);
 };
 
